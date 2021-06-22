@@ -76,12 +76,22 @@ namespace MathLearningProject
                 Console.WriteLine($"Logger_5433_0982340{loggerending}");
                 };
             }
-            static void Main()
+            static int SumOfDivisibles()
+        {
+            //Task: in numbers ranging from 1 to 70 find all the numbers divisible by 7 and sum them up
+            int sum = 0;
+            for (int i = 1; i < 70; i++)
             {
-            //HomeTaskDoubleRadius();
-            //IfElseTraining();
-            //WhileLoop();
-            ForLoop();
+                if (i % 7 == 0)
+                    {
+                        sum += i;
+                    }
             }
+            return sum;
+        }
+        static void Main()
+        {
+            Console.WriteLine("The sum of divisibles in the given range is "+SumOfDivisibles()+".");
+        }
     }
 }
