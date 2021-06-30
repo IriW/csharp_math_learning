@@ -78,47 +78,32 @@ namespace MathLearningProject
                 };
             }
 
-        static int SumOfDivisibles()
-        {
-     //Task: in numbers ranging from 0 to 70 find all the numbers divisible by 7 and sum them up
-
-        int sum = 0;
-        for (int nr =1; nr < 71; nr++)
-            {
-                if (nr % 7 == 0)
-                {
-                sum = sum + nr;
-                }
-            }
-        Console.WriteLine($"My result is: {sum}");
-        }
-        static void Lists()
+         static void Lists()
             //another home task
         {
             Console.WriteLine();
-var buy = new List<string> {"dress", "shirt", "pants"};
-foreach(var item in buy)
-    {
-    Console.WriteLine($"My list includes: {item}");
-    }
-var shopItemIndex = buy.IndexOf("pantss");
-if (shopItemIndex != -1)
-    {
-        Console.WriteLine($"The name {buy[shopItemIndex]} has index {shopItemIndex}");
-    }
-else
-    {
-        var notFound = buy.IndexOf("notFound");
-        {
-            Console.WriteLine("You failed. Review your code and try again.");
-        }
-    }
+            var buy = new List<string> {"dress", "shirt", "pants"};
+            foreach(var item in buy)
+                {
+                Console.WriteLine($"My list includes: {item}");
+                }
+            var shopItemIndex = buy.IndexOf("pantss");
+            if (shopItemIndex != -1)
+                {
+                    Console.WriteLine($"The name {buy[shopItemIndex]} has index {shopItemIndex}");
+                }
+            else
+                {
+                    var notFound = buy.IndexOf("notFound");
+                    {
+                        Console.WriteLine("You failed. Review your code and try again.");
+                    }
+                }
 
         }
                 static void Main()
         {
-            Console.WriteLine("The sum of divisibles in the given range is "+SumOfDivisibles()+".");
-            //Lists();
+            Lists();
         }
     }
 }
